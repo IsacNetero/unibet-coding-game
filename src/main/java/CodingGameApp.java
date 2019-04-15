@@ -15,5 +15,11 @@ public class CodingGameApp {
 
         RunnableItem collectionItem = new CollectionItem(list1, list2);
         collectionItem.run();
+
+        list1 = Arrays.asList(0,1,0,1,0,1,1,1,0,1,0,1,0,0,0,1,1,1,0,1,0,1,1,1,0,1);
+        list2 = Arrays.asList(1,1,1,0,1,0,0,0,1,1,0,1,0,0,1,0,0,1,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0,1,0,1,0,0,0,0,1);
+
+        RunnableItem zerosAndOnesItem = new ZerosAndOnesItem(list1, list2);
+        zerosAndOnesItem.run();
     }
 }
